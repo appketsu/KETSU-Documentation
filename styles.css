@@ -1,0 +1,145 @@
+ /* TAGS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+ /* TAGS */
+
+  p {
+      padding: 0;
+      margin: 0;
+
+  }
+
+  h1 {
+      padding:0;
+  }
+
+
+  p {
+      color: black;
+  }
+
+  hr {
+      margin: 0;
+  }
+
+  img {
+    border: solid;
+    border-radius: 1rem;
+    border-width: 0.15rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-top: 0.5rem;
+  }
+
+   /* GENERAL */
+
+.primary {
+    background-color: #222831;
+}
+
+.secondary {
+    background-color: #393e46;
+}
+
+.secondary-clear {
+    background-color: #eeeeee;
+}
+
+.m-text-primary {
+    color: white;
+}
+.m-text-secondary{
+    color: white;
+}
+
+.accent {
+    background-color:#ffd369;
+}
+
+.corners-round {
+    border: solid;
+    border-radius: 1rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.border {
+    border-width: 2px;
+    border: solid;
+    border-color: gray;
+}
+
+.horizontal-spacing {
+    height: 1rem;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+  .zero {
+    padding: 0;
+}
+
+  .relative {
+      position: relative;
+  }
+
+  .fixSize {
+      display: inherit;
+  }
+
+  .fullHeight {
+      height: 100%;
+  }
+
+  .fullWidth {
+    width: 100%;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+  .sticky {
+      position: sticky;
+      top: 1rem;
+  }
+  
+  .vertical{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .vertical-spacing {
+      height: 1rem;
+  }
+
+  .height-lol {
+      height: 999rem;
+  }
+
+     /* ORGANIZATION */
+
+     /* NAVBAR */
+
+     #nav-bar {
+        height: 3.4rem;
+     }
+
+
+     .section-text {
+         margin-bottom: 0.2rem;
+         margin-top: 0.5rem;
+     }
+

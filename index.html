@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <title>Documentation</title>
+</head>
+<body>
+    <div id="nav-bar"class="primary">
+        <div class="container-xxl fullWidth fullHeight relative">
+            <h1 class="vertical m-text-primary ">Documentation</h1>
+        </div>
+
+    </div>
+
+    <div class="container-xxl height-lol relative" >
+        <div class="row zero">
+            <div class="col-sm-12 col-md-3 sticky">
+                <div class="vertical-spacing"></div>
+                <div style="border-radius: 1rem;" id="left-div" class="sticky secondary-clear corners-round hidden padding">
+                    <input type="search" class="form-control" id="search">
+                    <div class="horizontal-spacing"></div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-9 height-lol ">
+                      <div class="vertical-spacing"></div>
+
+                <div id="Getting_Started" class="section">
+                    <h1>Getting Started</h1>
+                    <hr>
+                    <p class="section-text">KETSU is an app that allows developers to adapt websites to app format.</p>
+                    <p class="section-text">KETSU by itself is an empty app, it can´t do anything. You have to feed it a module to make it do something. This modules contain the instructions for KETSU to do things. This instructions can be, go to x website get the data and display it for example.</p>
+
+                    <p class="section-text">Here you are going to understand how modules work, how to make modules for KETSU, how to debug errors, how to set up the enviorment to develop modules etc. So lets get started!</p>
+                    <div id="Knowledge" class="subSection">
+                        <h2>Knowledge</h2>
+                        <hr>
+                        <p class="section-text">In order to be able to create modules you need basic knowledge on few ambits.</p>
+                        <p class="section-text">Javascript: Its important to know how code in js (Intermediate), Understand objects and know interact with the DOM.</p>
+                        <p class="section-text">Scrapping (Optional): If you have previous experience with web scrapping things will be more easy for you.</p>
+                        <p class="section-text">JSON: you will need to know json notation and how to interact with it.</p>
+                        <p class="section-text">Networking: You need to know and understand basic networking.</p>
+                    </div>
+                </div>
+
+                <div id="Modules" class="section">
+                    <h1>Modules</h1>
+                    <hr>
+                    <p class="section-text">Modules are basically a json object, this json object contains the instructions for the app to work</p>
+                    <p class="section-text">You can see an example of module over <a target="_blank" href="https://raw.githubusercontent.com/appketsu/KETSU-Setup/main/Example%20modules/imageModule.json">here</a></p>
+                    <p class="section-text">To visualize it better, we are going to display the json in tree format. So you can see things more clear.</p>
+                    <div id="Modules_structure" class="subSection">
+                        <h2>Modules Structure</h2>
+                        <hr>
+                        <p class="section-text">Modules have 6 major parts the moduleInfo, mainPage, search, info, chapters and moduleResolvers.</p>
+                        <img src="ModuleTree.png">
+                        <p class="section-text">Module Info: Contains info about the module and some basic configuration. such as the version, name etc.</p>
+                        <p class="section-text">The other ones that i mentionted above are the one ones in charge of making the mainpage, search, info etc get data from websites and display it. They are the most important objects because they contain the instructions for KETSU to do stuff.</p>
+                        <p class="section-text">The last ones that i didn´t mentioned above and you can see on the image are used for more advanced stuff, this will be covered after you understand the basics.</p>
+                    </div>
+                    <div id="The_basics" class="subSection">
+                        <h2>The basics</h2>
+                        <hr>
+                        <p class="section-text">Alright lets start with the basics. We are going to start with filling the module Info</p>
+                        <p class="section-text">To start making your module you will need the template. You can download it clicking <a href="Module Template.zip" target=_blank>here</a></p>
+                        <p class="section-text">On the json go to the module info and fill the variables with the info about your module</p>
+                        <img src="Mouduleinfo.png">
+                        <p class="section-text">Everything is very straight fordward, on moduleType set it to Video,Image, or Text depending on the output you want for your module.</p>
+
+                    </div>
+                    <div id="Main_Page" class="subSection">
+                        <h2>Main Page</h2>
+                        <hr>
+                        <p class="section-text">Let´s start with the actual thing, im just going to explain the mainpage part, because every part uses the same logic so if you are able to make the mainpage do something, you will be able to do it for the rest of the sections.</p>
+                        <p class="section-text">The mainpage object is the one in charge of displaying data on the Main page, were you expecting that? i know right. Anyways lets take a look at the MainPage object.</p>
+                        <img src="mainpage.png">
+                        <p class="section-text">As you can see the mainpage is an array of mainpage objects. Each one represents a request to a site, it´s an array because its not limited to one request. At the moment we are not going to chain requets to simplify everything. </p>
+                        <p class="section-text">The most important stuff here is the request, if you want to scrape data from google news for example, you set the url to google news and KETSU will do a request to that url.</p>
+                        <p class="section-text">The other important part is the javascript, the javascript is basically the logic, it is what is going to take the data from the site and fix it so KETSU can read it.</p>
+                        <p class="section-text">The objective of the javascript is going to be to recreate this same mainpage JSON object but with the output filled with the data you want kETSU to display.</p>
+                        <p class="section-text">On the module template you can find javascript templates for each section, let´s take a look at the mainpage section.</p>
+                    </div>
+                </div>
+
+              </div>
+        </div>
+    </div>
+
+    <script>
+
+        function createAndAppendSection(section,subSections) {
+
+            let sectionDiv = document.createElement('div');
+            let sectionName = document.createElement('p');
+            sectionName.innerHTML = '<strong>' + section + '</stong>';
+            sectionDiv.appendChild(sectionName);
+            sectionDiv.appendChild(document.createElement('hr'));
+
+            let subSectionsDiv = document.createElement('div');
+
+            sectionName.addEventListener('click',function(){
+                $(subSectionsDiv).slideToggle();
+            },false);
+
+            for (var y = 0; y < subSections.length;y++) {
+                let name = subSections[y].getAttribute('id').replace('_',' ');
+                let element = document.createElement('p');
+
+                element.innerText = name;
+                subSectionsDiv.appendChild(element);
+            }   
+            sectionDiv.appendChild(subSectionsDiv);
+            let leftDiv = document.querySelector('#left-div');
+            leftDiv.appendChild(sectionDiv);
+        }
+
+        // This script sets the sections on the left row
+        var sections = document.querySelectorAll('.section');
+
+        for (var x = 0; x < sections.length;x++) {
+            let section = sections[x];
+            let subSections = section.querySelectorAll('.subSection');
+            createAndAppendSection(section.getAttribute('id').replace('_',' '),subSections);
+        }
+    </script>
+
+
+<script></script>
+</body>
+</html>
+<!--  
+    #id will indicate the name of the section
+    .section will indicate the start of a section
+
+    .subSection will inidicate that something is part of a section # this will have an id aswell indicating the name.
+
+    --- Section #name (id)
+        --- SubSection #name (id)
+-->
+
+
