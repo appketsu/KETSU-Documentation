@@ -21,11 +21,11 @@
 
     <div class="container-xxl height-lol relative" >
         <div class="row zero">
-            <div class="col-sm-12 col-md-3 sticky">
+            <div class="col-sm-12 col-md-3 sticky ">
                 <div class="vertical-spacing"></div>
-                <div style="border-radius: 1rem;" id="left-div" class="sticky secondary-clear corners-round hidden padding">
+                <div style="border-radius: 0.5rem;" id="left-div" class="sticky secondary corners-round hidden padding ">
                     <input type="search" class="form-control" id="search">
-                    <div class="horizontal-spacing"></div>
+                    <div class="horizontal-spacing " ></div>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@
                         <h2>Modules Structure</h2>
                         <hr>
                         <p class="section-text">Modules have 6 major parts the moduleInfo, mainPage, search, info, chapters and moduleResolvers.</p>
-                        <img src="ModuleTree.png">
+                        <img  class="img-fluid" src="images/ModuleTree.png">
                         <p class="section-text">Module Info: Contains info about the module and some basic configuration. such as the version, name etc.</p>
                         <p class="section-text">The other ones that i mentionted above are the one ones in charge of making the mainpage, search, info etc get data from websites and display it. They are the most important objects because they contain the instructions for KETSU to do stuff.</p>
                         <p class="section-text">The last ones that i didn´t mentioned above and you can see on the image are used for more advanced stuff, this will be covered after you understand the basics.</p>
@@ -71,7 +71,7 @@
                         <p class="section-text">Alright lets start with the basics. We are going to start with filling the module Info</p>
                         <p class="section-text">To start making your module you will need the template. You can download it clicking <a href="Module Template.zip" target=_blank>here</a></p>
                         <p class="section-text">On the json go to the module info and fill the variables with the info about your module</p>
-                        <img src="Mouduleinfo.png">
+                        <img src="images/Mouduleinfo.png">
                         <p class="section-text">Everything is very straight fordward, on moduleType set it to Video,Image, or Text depending on the output you want for your module.</p>
 
                     </div>
@@ -80,12 +80,58 @@
                         <hr>
                         <p class="section-text">Let´s start with the actual thing, im just going to explain the mainpage part, because every part uses the same logic so if you are able to make the mainpage do something, you will be able to do it for the rest of the sections.</p>
                         <p class="section-text">The mainpage object is the one in charge of displaying data on the Main page, were you expecting that? i know right. Anyways lets take a look at the MainPage object.</p>
-                        <img src="mainpage.png">
-                        <p class="section-text">As you can see the mainpage is an array of mainpage objects. Each one represents a request to a site, it´s an array because its not limited to one request. At the moment we are not going to chain requets to simplify everything. </p>
+                        <img class="img-fluid" src="images/mainpage.png">
+                        <p class="section-text">As you can see the mainpage is an array of mainpage objects. Each one represents a request to a site, it´s an array because its not limited to one request. At the moment we are not going to chain request to simplify everything. </p>
                         <p class="section-text">The most important stuff here is the request, if you want to scrape data from google news for example, you set the url to google news and KETSU will do a request to that url.</p>
                         <p class="section-text">The other important part is the javascript, the javascript is basically the logic, it is what is going to take the data from the site and fix it so KETSU can read it.</p>
                         <p class="section-text">The objective of the javascript is going to be to recreate this same mainpage JSON object but with the output filled with the data you want kETSU to display.</p>
                         <p class="section-text">On the module template you can find javascript templates for each section, let´s take a look at the mainpage section.</p>
+                    </div>
+                    <div id="Main_Page_Javascript" class="subSection">
+                        <h2>Main Page Javascript</h2>
+                        <hr>
+                        <p class="section-text">At the top you will find some objects with static values that you can use on the javascript. I will explain you the use of them later.</p>
+                        <img class="img-fluid" src="Images/staticVariables.png">
+                        <p class="section-text">After the static variables you will see the function classes, this functions allow you to create obejcts, you will use this objects to recreate the mainpage json object mentioned above, but through javascript.</p>
+                        <img  class="img-fluid" src="Images/functionClasses.png">
+                        <p class="section-text">Then you will find some usefull functions that will speed up your development, they are there to make your life easier, depending on the section you are coding (mainpage,search etc) they will vary.</p>
+                        <img class="img-fluid" src="Images/usefullFunctions.png">
+                        <p class="section-text">And lastly the part where you have to code with some instructions, in most of the cases every object is made already and you just have to fill the outpu array with output objects, you have the instructions for each part inside the javscript itself.</p>
+                        <img class="img-fluid" src="Images/finaljsmainpage.png">
+                        <p class="section-text">As you can see after the mainpage object is done it is converted to a JSON string, and saved on an element on the html with an id called ketsu-final-data, it is generated by KETSU so you dont have to create it. After you save the object on the ketsu-final-div element KETSU will take it and read it to display the data.</p>
+                        <p class="section-text">Now im going to talk about the working flow of KETSU so you understand what i just explained better.</p>
+                    </div>
+                </div>
+                <div id="KETSU_Flow" class="section">
+                    <h1>KETSU Flow</h1>
+                    <hr>
+                    <p class="section-text">Here im going to explain what is KETSU doing with the request and the javascript, its important for you to understand this, this is basically the foundtation of what is going with the javascript the request and basically the whole thing.</p>
+
+                    
+                    <div id="Flow" class="subSection">
+                        <h2>Flow</h2>
+                        <hr>
+                        <p class="section-text">As i said im going to explain it only for the mainpage section but every section works the same.
+                        </p>
+                        <p class="section-text">Everything starts with the first object of the section in this case is this one.</p>
+                        <img class="img-fluid" src="Images/mainpage.png">
+                        <p class="section-text">Now what KETSU is going to do when it loads the mainpage? it will do a request to the url in this case is google.com and it will retrieve the html.</p>
+                        <p class="section-text">Two things are going to be changed from the original html.</p>
+                        <p class="section-text">The first one, on the top of the html body of the request, KESTU will add a div with an id called 'ketsu-final-data', inside this div KETSU will put the mainpage object of the json the one we mentioned above. it will look like somethign like this</p>
+                        <img class="img-fluid" src="Images/google.png">
+                        <p class="section-text">And on the bottom, as you can see there is a script element, this script is also generated by KETSU and it will be filled with the script you set on the script variable of the mainpage json object</p>
+                        <img class="img-fluid" src="Images/script.png">
+                        <p class="section-text">The javascript will be executed, and as i said before it has to take the data from the html and generate the same JSON object as the mainpage one but with the output array filled with data. Data that will be displayed later on KETSU.</p>
+                        <img class="img-fluid" src="Images/output array.png">
+                        <p class="section-text">Now if on this new object that you created throught the javascript you leave the request variable empty, KETSU will stop making request and it will take the output from the object to display it in the mainpage.</p>
+                        <p class="vertical-spacing"></p>
+
+                        <div class="alert alert-danger" role="alert">
+                            This is more complex stuff.
+                          </div>
+                        <p class="section-text">If you needed to make another request, you would have to set the new url on the object you just created through the javascript. Then KESTU will execute that request but one thing will be different from the first request. Lest say our javascript generated object looks like this.</p>
+                        <img class="img-fluid" src="Images/Second request.png">
+
                     </div>
                 </div>
 
@@ -143,6 +189,25 @@
 
     --- Section #name (id)
         --- SubSection #name (id)
--->
 
+        <!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es">
+ <head>
+
+ </head>
+ <body jsmodel="TvHxbe">
+  <div id="ketsu-final-data">
+   {"javascriptConfig":{"removeJavascript":true,"loadInWebView":false,"javaScript":""},"output":[{"paging":"","data":[{"field3":"","field1":"Example Text result","field2":"","field4":"","isChapter":false,"title":"Example Text result","image":{"url":"https:\/\/cdn.business2community.com\/wp-content\/uploads\/2013\/09\/best-press-release-example.jpg","method":"get","headers":[{"key":"","value":""}]},"link":{"url":"https:\/\/google.com\/?text=","method":"get","headers":[{"key":"key","value":"value"}]},"description":""}],"cellDesing":"wide7","section":{"sectionName":"Text Module results","separator":true},"defaultLayout":"wideFull","orientation":"vertical"}],"request":{"url":"https:\/\/google.com\/","method":"get","headers":[{"key":"","value":""}]},"extra":{"commands":[{"commandName":"","params":[{"key":"","value":""}]}],"extraInfo":[{"key":"","value":""}]},"global":{"cookies":[{"key":"","value":""}],"variables":[],"headers":[{"key":"","value":""}]},"responseInfo":{"headers":[{"key":"Strict-Transport-Security","value":"max-age=31536000"},{"key":"x-xss-protection","value":"0"},{"key":"Cache-Control","value":"private,%20max-age=0"},{"key":"x-frame-options","value":"SAMEORIGIN"},{"key":"Alt-Svc","value":"h3-29=%22%3A443%22;%20ma=2592000,h3-T051=%22%3A443%22;%20ma=2592000,h3-Q050=%22%3A443%22;%20ma=2592000,h3-Q046=%22%3A443%22;%20ma=2592000,h3-Q043=%22%3A443%22;%20ma=2592000,quic=%22%3A443%22;%20ma=2592000;%20v=%2246,43%22"},{"key":"Content-Length","value":"36214"},{"key":"Date","value":"Wed,%2024%20Mar%202021%2023%3A48%3A01%20GMT"},{"key":"Server","value":"gws"},{"key":"p3p","value":"CP=%22This%20is%20not%20a%20P3P%20policy!%20See%20g.co%2Fp3phelp%20for%20more%20info.%22"},{"key":"Content-Type","value":"text%2Fhtml;%20charset=UTF-8"},{"key":"Content-Encoding","value":"gzip"},{"key":"Expires","value":"-1"},{"key":"Set-Cookie","value":"NID=212=Bv7dfTrGXZKmt9aqPZ3NLeuKnRtevRNM45jRrrtN7nA1MEIDC1hZnVK5i3-mvADwfcKuxowJzoA8Gn3ZIHl89XqlXHK5UH1OuDp6UDY8JzwAqEg_Z6pwIjVdXWQ-xKgllg7UTDPyyDHw-Emlju7zfAv6bRiQFZGqNR5agJj6PSc;%20expires=Thu,%2023-Sep-2021%2023%3A48%3A01%20GMT;%20path=%2F;%20domain=.google.com;%20Secure;%20HttpOnly;%20SameSite=none"}],"responseUrl":"https:\/\/www.google.com\/","httpBody":""},"layoutInfo":{"width":428,"height":745.66666666666663}}
+  </div>
+
+  // here would be the html body of the request in this case google
+  // but i deleted it.
+
+  <script type="text/javascript">
+    // here would be your javscript
+</script>
+ </body>
+</html>
+
+-->
 
