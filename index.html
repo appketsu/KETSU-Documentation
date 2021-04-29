@@ -1,51 +1,72 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Documentation</title>
 </head>
+
 <body>
-    <div id="nav-bar"class="primary">
+    <div id="nav-bar" class="primary">
         <div class="container-xxl fullWidth fullHeight relative">
             <h1 class="vertical m-text-primary ">Documentation</h1>
         </div>
 
     </div>
 
-    <div class="container-xxl height-lol relative" >
+    <div class="container-xxl height-lol relative">
         <div class="row zero">
             <div class="col-sm-12 col-md-3 sticky ">
                 <div class="vertical-spacing"></div>
-                <div style="border-radius: 0.5rem;" id="left-div" class="sticky secondary corners-round hidden padding ">
-                    <input type="search" class="form-control" id="search">
-                    <div class="horizontal-spacing " ></div>
+                <div style="border-radius: 0.5rem;" id="left-div"
+                    class="sticky secondary corners-round hidden padding ">
+                    <!--<input type="search" class="form-control" id="search">
+                    <div class="horizontal-spacing "></div>-->
                 </div>
-              </div>
+            </div>
 
-              <div class="col-sm-12 col-md-9 height-lol ">
-                      <div class="vertical-spacing"></div>
+            <div class="col-sm-12 col-md-9 height-lol ">
+                <div class="vertical-spacing"></div>
 
                 <div id="Getting_Started" class="section">
                     <h1>Getting Started</h1>
                     <hr>
-                    <p class="section-text">KETSU is an app that allows developers to adapt websites to app format.</p>
-                    <p class="section-text">KETSU by itself is an empty app, it can´t do anything. You have to feed it a module to make it do something. This modules contain the instructions for KETSU to do things. This instructions can be, go to x website get the data and display it for example.</p>
+                    <div id="Starting" class="subSection">
 
-                    <p class="section-text">Here you are going to understand how modules work, how to make modules for KETSU, how to debug errors, how to set up the enviorment to develop modules etc. So lets get started!</p>
+                    <p class="section-text">KETSU is an app that allows developers to adapt websites to app format.</p>
+                    <p class="section-text">KETSU by itself is an empty app, it can´t do anything. You have to feed it a
+                        module to make it do something. This modules contain the instructions for KETSU to do things.
+                        This instructions can be, go to x website get the data and display it for example.</p>
+
+                    <p class="section-text">Here you are going to understand how modules work, how to make modules for
+                        KETSU, how to debug errors, how to set up the enviorment to develop modules etc. So lets get
+                        started!</p>
+                    </div>
                     <div id="Knowledge" class="subSection">
                         <h2>Knowledge</h2>
                         <hr>
-                        <p class="section-text">In order to be able to create modules you need basic knowledge on few ambits.</p>
-                        <p class="section-text">Javascript: Its important to know how code in js (Intermediate), Understand objects and know interact with the DOM.</p>
-                        <p class="section-text">Scrapping (Optional): If you have previous experience with web scrapping things will be more easy for you.</p>
-                        <p class="section-text">JSON: you will need to know json notation and how to interact with it.</p>
+                        <p class="section-text">In order to be able to create modules you need basic knowledge on few
+                            ambits.</p>
+                        <p class="section-text">Javascript: Its important to know how code in js (Intermediate),
+                            Understand objects and know interact with the DOM.</p>
+                        <p class="section-text">Scrapping (Optional): If you have previous experience with web scrapping
+                            things will be more easy for you.</p>
+                        <p class="section-text">JSON: you will need to know json notation and how to interact with it.
+                        </p>
                         <p class="section-text">Networking: You need to know and understand basic networking.</p>
                     </div>
                 </div>
@@ -53,95 +74,300 @@
                 <div id="Modules" class="section">
                     <h1>Modules</h1>
                     <hr>
-                    <p class="section-text">Modules are basically a json object, this json object contains the instructions for the app to work</p>
-                    <p class="section-text">You can see an example of module over <a target="_blank" href="https://raw.githubusercontent.com/appketsu/KETSU-Setup/main/Example%20modules/imageModule.json">here</a></p>
-                    <p class="section-text">To visualize it better, we are going to display the json in tree format. So you can see things more clear.</p>
+                    <p class="section-text">Modules are basically a json object, this json object contains the
+                        instructions for the app to work</p>
+                    <p class="section-text">You can see an example of module over <a target="_blank"
+                            href="https://raw.githubusercontent.com/appketsu/KETSU-Setup/main/Example%20modules/imageModule.json">here</a>
+                    </p>
+                    <p class="section-text">To visualize it better, we are going to display the json in tree format. So
+                        you can see things more clear.</p>
                     <div id="Modules_structure" class="subSection">
                         <h2>Modules Structure</h2>
                         <hr>
-                        <p class="section-text">Modules have 6 major parts the moduleInfo, mainPage, search, info, chapters and moduleResolvers.</p>
-                        <img  class="img-fluid" src="images/ModuleTree.png">
-                        <p class="section-text">Module Info: Contains info about the module and some basic configuration. such as the version, name etc.</p>
-                        <p class="section-text">The other ones that i mentionted above are the one ones in charge of making the mainpage, search, info etc get data from websites and display it. They are the most important objects because they contain the instructions for KETSU to do stuff.</p>
-                        <p class="section-text">The last ones that i didn´t mentioned above and you can see on the image are used for more advanced stuff, this will be covered after you understand the basics.</p>
+                        <p class="section-text">Modules have 6 major parts the moduleInfo, mainPage, search, info,
+                            chapters and moduleResolvers.</p>
+                        <img class="img-fluid" src="images/ModuleTree.png">
+                        <p class="section-text">Module Info: Contains info about the module and some basic
+                            configuration. such as the version, name etc.</p>
+                        <p class="section-text">The other ones that i mentionted above are the one ones in charge of
+                            making the mainpage, search, info etc get data from websites and display it. They are the
+                            most important objects because they contain the instructions for KETSU to do stuff.</p>
+                        <p class="section-text">The last ones that i didn´t mentioned above and you can see on the image
+                            are used for more advanced stuff, this will be covered after you understand the basics.</p>
                     </div>
                     <div id="The_basics" class="subSection">
                         <h2>The basics</h2>
                         <hr>
-                        <p class="section-text">Alright lets start with the basics. We are going to start with filling the module Info</p>
-                        <p class="section-text">To start making your module you will need the template. You can download it clicking <a href="Module Template.zip" target=_blank>here</a></p>
-                        <p class="section-text">On the json go to the module info and fill the variables with the info about your module</p>
+                        <p class="section-text">Alright lets start with the basics. We are going to start with filling
+                            the module Info</p>
+                        <p class="section-text">To start making your module you will need the template. You can download
+                            it clicking <a href="Module Template.zip" target=_blank>here</a></p>
+                        <p class="section-text">On the json go to the module info and fill the variables with the info
+                            about your module</p>
                         <img src="images/Mouduleinfo.png">
-                        <p class="section-text">Everything is very straight fordward, on moduleType set it to Video,Image, or Text depending on the output you want for your module.</p>
+                        <p class="section-text">Everything is very straight fordward, on moduleType set it to
+                            Video,Image, or Text depending on the output you want for your module.</p>
 
                     </div>
                     <div id="Main_Page" class="subSection">
                         <h2>Main Page</h2>
                         <hr>
-                        <p class="section-text">Let´s start with the actual thing, im just going to explain the mainpage part, because every part uses the same logic so if you are able to make the mainpage do something, you will be able to do it for the rest of the sections.</p>
-                        <p class="section-text">The mainpage object is the one in charge of displaying data on the Main page, were you expecting that? i know right. Anyways lets take a look at the MainPage object.</p>
+                        <p class="section-text">Let´s start with the actual thing, im just going to explain the mainpage
+                            part, because every part uses the same logic so if you are able to make the mainpage do
+                            something, you will be able to do it for the rest of the sections.</p>
+                        <p class="section-text">The mainpage object is the one in charge of displaying data on the Main
+                            page, were you expecting that? i know right. Anyways lets take a look at the MainPage
+                            object.</p>
                         <img class="img-fluid" src="images/mainpage.png">
-                        <p class="section-text">As you can see the mainpage is an array of mainpage objects. Each one represents a request to a site, it´s an array because its not limited to one request. At the moment we are not going to chain request to simplify everything. </p>
-                        <p class="section-text">The most important stuff here is the request, if you want to scrape data from google news for example, you set the url to google news and KETSU will do a request to that url.</p>
-                        <p class="section-text">The other important part is the javascript, the javascript is basically the logic, it is what is going to take the data from the site and fix it so KETSU can read it.</p>
-                        <p class="section-text">The objective of the javascript is going to be to recreate this same mainpage JSON object but with the output filled with the data you want kETSU to display.</p>
-                        <p class="section-text">On the module template you can find javascript templates for each section, let´s take a look at the mainpage section.</p>
+                        <p class="section-text">As you can see the mainpage is an array of mainpage objects. Each one
+                            represents a request to a site, it´s an array because its not limited to one request. At the
+                            moment we are not going to chain request to simplify everything. </p>
+                        <p class="section-text">The most important stuff here is the request, if you want to scrape data
+                            from google news for example, you set the url to google news and KETSU will do a request to
+                            that url.</p>
+                        <p class="section-text">The other important part is the javascript, the javascript is basically
+                            the logic, it is what is going to take the data from the site and fix it so KETSU can read
+                            it.</p>
+                        <p class="section-text">The objective of the javascript is going to be to recreate this same
+                            mainpage JSON object but with the output filled with the data you want kETSU to display.</p>
+                        <p class="section-text">On the module template you can find javascript templates for each
+                            section, let´s take a look at the mainpage section.</p>
                     </div>
                     <div id="Main_Page_Javascript" class="subSection">
                         <h2>Main Page Javascript</h2>
                         <hr>
-                        <p class="section-text">At the top you will find some objects with static values that you can use on the javascript. I will explain you the use of them later.</p>
+                        <p class="section-text">At the top you will find some objects with static values that you can
+                            use on the javascript. I will explain you the use of them later.</p>
                         <img class="img-fluid" src="Images/staticVariables.png">
-                        <p class="section-text">After the static variables you will see the function classes, this functions allow you to create obejcts, you will use this objects to recreate the mainpage json object mentioned above, but through javascript.</p>
-                        <img  class="img-fluid" src="Images/functionClasses.png">
-                        <p class="section-text">Then you will find some usefull functions that will speed up your development, they are there to make your life easier, depending on the section you are coding (mainpage,search etc) they will vary.</p>
+                        <p class="section-text">After the static variables you will see the function classes, this
+                            functions allow you to create obejcts, you will use this objects to recreate the mainpage
+                            json object mentioned above, but through javascript.</p>
+                        <img class="img-fluid" src="Images/functionClasses.png">
+                        <p class="section-text">Then you will find some usefull functions that will speed up your
+                            development, they are there to make your life easier, depending on the section you are
+                            coding (mainpage,search etc) they will vary.</p>
                         <img class="img-fluid" src="Images/usefullFunctions.png">
-                        <p class="section-text">And lastly the part where you have to code with some instructions, in most of the cases every object is made already and you just have to fill the outpu array with output objects, you have the instructions for each part inside the javscript itself.</p>
+                        <p class="section-text">And lastly the part where you have to code with some instructions, in
+                            most of the cases every object is made already and you just have to fill the outpu array
+                            with output objects, you have the instructions for each part inside the javscript itself.
+                        </p>
                         <img class="img-fluid" src="Images/finaljsmainpage.png">
-                        <p class="section-text">As you can see after the mainpage object is done it is converted to a JSON string, and saved on an element on the html with an id called ketsu-final-data, it is generated by KETSU so you dont have to create it. After you save the object on the ketsu-final-div element KETSU will take it and read it to display the data.</p>
-                        <p class="section-text">Now im going to talk about the working flow of KETSU so you understand what i just explained better.</p>
+                        <p class="section-text">As you can see after the mainpage object is done it is converted to a
+                            JSON string, and saved on an element on the html with an id called ketsu-final-data, it is
+                            generated by KETSU so you dont have to create it. After you save the object on the
+                            ketsu-final-div element KETSU will take it and read it to display the data.</p>
+                        <p class="section-text">Now im going to talk about the working flow of KETSU so you understand
+                            what i just explained better.</p>
                     </div>
                 </div>
                 <div id="KETSU_Flow" class="section">
                     <h1>KETSU Flow</h1>
                     <hr>
-                    <p class="section-text">Here im going to explain what is KETSU doing with the request and the javascript, its important for you to understand this, this is basically the foundtation of what is going with the javascript the request and basically the whole thing.</p>
+                    <p class="section-text">Here im going to explain what is KETSU doing with the request and the
+                        javascript, its important for you to understand this, this is basically the foundtation of what
+                        is going with the javascript the request and basically the whole thing.</p>
 
-                    
                     <div id="Flow" class="subSection">
                         <h2>Flow</h2>
                         <hr>
-                        <p class="section-text">As i said im going to explain it only for the mainpage section but every section works the same.
+                        <p class="section-text">As i said im going to explain it only for the mainpage section but every
+                            section works the same.
                         </p>
-                        <p class="section-text">Everything starts with the first object of the section in this case is this one.</p>
+                        <p class="section-text">Everything starts with the first object of the section in this case is
+                            this one.</p>
                         <img class="img-fluid" src="Images/mainpage.png">
-                        <p class="section-text">Now what KETSU is going to do when it loads the mainpage? it will do a request to the url in this case is google.com and it will retrieve the html.</p>
+                        <p class="section-text">Now what KETSU is going to do when it loads the mainpage? it will do a
+                            request to the url in this case is google.com and it will retrieve the html.</p>
                         <p class="section-text">Two things are going to be changed from the original html.</p>
-                        <p class="section-text">The first one, on the top of the html body of the request, KESTU will add a div with an id called 'ketsu-final-data', inside this div KETSU will put the mainpage object of the json the one we mentioned above. it will look like somethign like this</p>
+                        <p class="section-text">The first one, on the top of the html body of the request, KESTU will
+                            add a div with an id called 'ketsu-final-data', inside this div KETSU will put the mainpage
+                            object of the json the one we mentioned above. it will look like somethign like this</p>
                         <img class="img-fluid" src="Images/google.png">
-                        <p class="section-text">And on the bottom, as you can see there is a script element, this script is also generated by KETSU and it will be filled with the script you set on the script variable of the mainpage json object</p>
+                        <p class="section-text">And on the bottom, as you can see there is a script element, this script
+                            is also generated by KETSU and it will be filled with the script you set on the script
+                            variable of the mainpage json object</p>
                         <img class="img-fluid" src="Images/script.png">
-                        <p class="section-text">The javascript will be executed, and as i said before it has to take the data from the html and generate the same JSON object as the mainpage one but with the output array filled with data. Data that will be displayed later on KETSU.</p>
+                        <p class="section-text">The javascript will be executed, and as i said before it has to take the
+                            data from the html and generate the same JSON object as the mainpage one but with the output
+                            array filled with data. Data that will be displayed later on KETSU.</p>
                         <img class="img-fluid" src="Images/output array.png">
-                        <p class="section-text">Now if on this new object that you created throught the javascript you leave the request variable empty, KETSU will stop making request and it will take the output from the object to display it in the mainpage.</p>
+                        <p class="section-text">Now if on this new object that you created throught the javascript you
+                            leave the request variable empty, KETSU will stop making request and it will take the output
+                            from the object to display it in the mainpage.</p>
                         <p class="vertical-spacing"></p>
+                    </div>
+                    <div id="Chain_requests" class="subSection">
 
                         <div class="alert alert-danger" role="alert">
                             This is more complex stuff.
-                          </div>
-                        <p class="section-text">If you needed to make another request, you would have to set the new url on the object you just created through the javascript. Then KESTU will execute that request but one thing will be different from the first request. Lest say our javascript generated object looks like this.</p>
-                        <img class="img-fluid" src="Images/Second request.png">
+                        </div>
 
+                        <p class="section-text">If you needed to make another request, you would have to set the new url
+                            on the object you just created through the javascript. Then KESTU will execute that request
+                            but one thing will be different from the first request. Lest say our javascript generated
+                            object looks like this.</p>
+                        <img class="img-fluid" src="Images/Second request.png">
+                        <p class="section-text">This means that now KETSU instead of stopping here and displaying the
+                            data on the app, will do a second request to youtube. This second request as the first one
+                            will have the ketsu-final-data div appended at the top and the javascript that will be
+                            executed at the bottom.</p>
+                        <p class="section-text">It will look something like this:</p>
+                        <img class="img-fluid" src="Images/secondRequestjs.png">
+                        <p class="section-text">Now where do you set the second javascript, well this is very simple. On the json module where you setted the first javascript on the first object of the mainpage array is your first javascript. So what you have to do is to copy the first mainpage object from the array and paste it on the array after the first one, on that second object you will change the javascript to your new javascript. You will have something like this:
+                        </p>
+                        <img class="img-fluid" src="Images/nextRequestExjson.png">
+                        <p class="section-text">And you can keep doing this cycle indefinetely its not limited to 2 or 3
+                            request. It will stop doing request if on the new object you create the url variable is
+                            empty or the next request is the same as the previous one (This is to avoid infinite loops).
+                        </p>
+                        <p class="section-text">Last question, what happens if theres a a url setted but there is only one javascript? in this case KETSU will reuse the last javascript used on the previous request.
+                        </p>
                     </div>
                 </div>
 
-              </div>
+                <div id="Creating_a_module" class="section">
+                    <h1>Creating a module</h1>
+                    <hr>
+                    <div id="Basics" class="subSection">
+                        <p class="section-text">
+                            In order to create a module you are going to need few things.
+                        </p>
+                        <p class="section-text">
+                            - The modules template, download it <a href="">here</a>.
+                        </p>
+                        <p class="section-text">
+                            - A code editor in this case im going to use VSCode.
+                        </p>
+                        <p class="section-text">
+                            - And any navigator to debug your code. 
+                        </p>
+                        <p class="section-text">
+                            Im going to code the mainpage only, as i said the logic is the same for every part so if you understand the mainpage you will be able to apply the knoledge to all of the parts.
+                        </p>
+                        <p class="section-text">
+                            My idea is to make a module that gets the most seen anime of the week and displays it on the mainpage & below it im going to show the anime schedule of today.
+                        </p>
+                        <p class="section-text">
+                            To make this happen im going to need to make use of the multiple request that i mentioned above, so this should cover everything here. In order to make it we need websites that get us the information we need, in this case im going to use livechart website for the schedule and anilist to get the most seen anime of the week. The result will be something like this.
+                        </p>
+                        <img class="img-fluid" src="Images/finalresult.PNG" width="300">
+                    </div>
+                    <div id="Set_Up" class="subSection">
+                        <h2>Set Up</h2>
+                        <hr>
+                        <p class="section-text">
+                            First we need to set everything up, im going to download and open open the module template on VSCode. It should look something like this.
+                        </p>
+                        <img class="img-fluid" src="Images/vscodefolder.png">
+                        <p class="section-text">
+                            Each folder contains a .html with the template javascript for each part.
+                        </p>
+                        <p class="section-text">
+                            Once we have everything in order we are going to start making our module. The first step is to open the module "moduleTemplate.json" and add the moduleInfo section.
+                        </p>
+                        <p class="section-text">
+                            This section is the easiest part, is basically where you have to put basic information about your module such as the name, the language etc. your final result should look something like this (With info about  your module).
+                        </p>
+                        <img class="img-fluid" src="Images/moduleInfo.png">
+                        <p class="section-text">
+                            Now we are going to start with the mainpage.
+                        </p>
+                    </div>
+                    <div id="Main_page" class="subSection">
+                        <h2>Main Page</h2>
+                        <hr>
+                        <p class="section-text">
+                            Alright first thing i want to say is that you only have to configure 4 things on each part of the mainge / search etc. Those things are the request, the javascript and the 2 booleans on the javascript. So this are the only things you have to configure:
+                        </p>
+                        <img class="img-fluid" src="Images/mainpagenadrequest.png">
+                        <p class="section-text">
+                            I recommend you leaving the 2 booleans as they are on the template, on most of the cases you wont have to touch them. So focus on the request and the javascript. Below i will leave a table which defines every property of the json so you can read what they do over there.
+                        </p>
+                        <p class="section-text">
+                            Alright, now that the info is done we are going to prepare the enviorement to code the mainpage and be able to try everything in real time, checking bugs etc. So what we have to do is to set the request of the mainpage and load the module on KETSU.
+                        </p>
+                        <img class="img-fluid" src="Images/urlMainpage.png">
+                        <p class="section-text">
+                           As you can see i just setted the url to MyAnimeList and now im going to load the module on KETSU. To do that im going to send over the whole .json module to my phone, im going to copy it to my clipboard and i will click import it on the modules manager to load it on KETSU.
+                        </p>
+                        <img class="img-fluid" src="Images/regift.gif">
+                        <p class="section-text">
+                            Now we will click it on module we just loaded on the manager, then the manager will close itself and with this we will have triggered the mainpage code from the module. 
+                         </p>
+                         <p class="section-text">
+                            The next step is to get the log of that mainpage Execution, to do that we will go to the *Moudule Logs* and we will click on the mainpage log *Executing Fixed Html* This will show up the log.
+                         </p>
+                         <img class="img-fluid" src="Images/modulelogs.jpg"  width="300">
+                         <img class="img-fluid" src="Images/exectuedfix.jpg"  width="300">
+                         <p class="section-text">
+                           This log contains the fixed html which you will use to work on the module. So you will have to copy the whole html clicking clipboard on the top right and pasting it on the mainpage.html of your module template, right above the template javascript of the mainpage.html file.
+                         </p>
+                         <p class="section-text">
+                            After doing this you will have something like this:
+                          </p>
+                          <img class="img-fluid" src="Images/beforeremplacing.png" >
+                          <p class="section-text">
+                            The last thing you have to do to start coding is to replace that empty javascript tag at the bottom of the html with the template javscript the module provided that you left outside the html. Now you are completely setted up. Lets start coding.
+                          </p>
+                    </div>
+                    <div id="Coding_the_module" class="subSection">
+                        <h2>Coding the Module</h2>
+                        <hr>
+                        <p class="section-text">After start coding remember that you always have to use ' insetead of " on the strings, your script cant have any comments and remember to add ; after every line of code if you miss a single of this ; the module wont work on KETSU. All of this is because later you will have to compress the javascript and add it to the json.</p>
+                    </div>
+                    <img class="img-fluid" src="Images/templateinstructions.png" >
+                    <p class="section-text">As the instructions say at the bottom of the javascript you will have to fill the output array of output objects, what you want to do with the javascript is to recreate the mainpage object, this one:</p>
+                    <img class="img-fluid" src="Images/mainapagewithdata.png" >
+                    <p class="section-text">But with the output filled with output objects with data.</p>
+                    <p class="section-text">The finished script will look like this:</p>
+                    <img class="img-fluid" src="Images/finishedfirstscript.png" >
+                    <p class="section-text">As you can see i only added code from line 2309 to 2322, what im basically doing on line 2309 is getting all the data i need from the html and adding it as Data objects (line 2318-2319) to the dataArray.</p>
+                    <p class="section-text">Then on line 2322 im creating an output object which needs the cell desing, the orientation, the layout design the paging, the section title (uses a section object) & lastly the data that the output will have, this is the array of Data objects we just filled on line 2319.</p>
+                    <p class="section-text">With that output object created we append it to the output array and create the mainpage object on line 2324.</p>
+                    <p class="section-text">As i said before we will need to do two request, one to My anime list and the other one to live chart, as you can see the mainpage object we are creating has the livechart url on the request object, this will make KETSU do a second request to livechart.</p>
+                    <p class="section-text">If we print MainPageObject on the console it looks like this.</p>
+                    <img class="img-fluid" src="Images/finalMainPageobj.png" >
+                    <p class="section-text">As you can see is basically the same mainpage object as the module one but filled with data, now on lines 2326 - 2327 we transform it to a string and we set it at the top on the ketsu-final-data div that KETSU generated.</p>
+                    <p class="section-text">After copying the javascript to the module we will get something like this:</p>
+                    <img class="img-fluid" src="Images/jsonwithfirstjs.png" >
+                    <p class="section-text">The object and the javascript are longer but i shortened the image to make more clear. you just basically fill the javascript with the compresssed javscript you created.</p>
+                    <p class="section-text">Now you have to do what we previously did, send the module to your phone, copy it to your clipboard and import it on the modules manager again on KETSU. Then click on the module to load it.</p>
+                    <img class="img-fluid" src="Images/regift.gif">
+                    <p class="section-text">If everything worked as intended you should be able to see the data on the mainpage. In this case mine looks like this.</p>
+                    <img class="img-fluid" src="Images/mainpagep1.PNG"  width="300">
+                    <p class="section-text">As you can see the top animes of the week are displaying fine. Now we are going to repeat the same process as before, now that we have triggered the mainpage with the new module, if we check the logs we will see another request being done. This is because on the javascript we setted the url to livechart instead of leaving it empty. This means the app has done the request to livechart but since we didnt set the javascrip on the module to get the data of this second website, nothing else is displaying besides top animes of the week that we just coded.</p>
+                    <img class="img-fluid" src="Images/modulelogs.jpg"  width="300">
+                    <img class="img-fluid" src="Images/secondlogs.jpeg"  width="300">
+                    <p class="section-text">Like before you will have to copy that second executing Fixedhtml log and do the same process as before, but now you only have one mainpage.html on the template folder and its been used already so what you will have to do is to add another mainpage.html (call it mainpage2.html) with the javascript template on it.</p>
+                    <img class="img-fluid" src="Images/folderwithmainpage2.png">
+                    <p class="section-text">On this mainpage2.html you will repeat the same process as before. Paste the html log you just copied, above the template javascript and on the bottom of the html you will see an empty script, replace this script with the template javascript.</p>
+                    <p class="section-text">Now that everything is setted up lets see how the script looks after i coded it.</p>
+                    <img class="img-fluid" src="Images/secondjs.png">
+                    <p class="section-text">As you can see the first thing that changes is on the line 2718, instead of creating an empty array for the output objects, we say parsedJson.output, this is because this is the second reqeust and on the parsedJson object its our previous mainpage object which has the top animes of the week, so if we want to still  keep it we will have to add it on the new object mainpage object that we are going to create on this second request.</p>
+                    <p class="section-text">And the rest of the code is the same, we just get the data from the html to create the dataArrays which will fill the output objects on line 2748, after we got all the data we need. We create a mainpageobject on line 2752 but instead of adding another url to it, we leave the url empty. This will make KETSU stop making request and use this object as the data that will be displayed.</p>
+                    <p class="section-text">Our mainpage object will end up looking like this:</p>
+                    <img class="img-fluid" src="Images/secondmainpage.png">
+                    <p class="section-text">As you can see we got 8 output objects filled with data, the first one is from the myanimelist request we made before and the other seven ones were taken from this second request ("livechart website") each of those sections represent one day of the week.</p>
+                    <p class="section-text">Now where do we set this second javascript? Simple, when we do second request things changes, as i mention before to make a request with the module system you gotta set the 4 variables of the module, the request, the javascript and the booleans above the javascript:</p>
+                    <img class="img-fluid" src="Images/mainpagenadrequest.png">
+                    <p class="section-text">On second requests things changes, as you probably guessed now on this second request we dont have to hardcode the request, we already setted the request on the previous javascript. This is because on second request the 2 booleans of the javascript (removeJavascirpt & loadInWebView) and the request are setted on the javascript of the previous request as we did, but the javascript goes somewhere else.</p>
+                    <p class="section-text">What you have to do is to create a second mainpage object on the array of mainpages on your module, it will look like this:</p>
+                    <img class="img-fluid" src="Images/json2objects.png" width="400">
+                    <p class="section-text">On that second object you compress your javascript and you set it on the javascript vairable as you did before:</p>
+                    <img class="img-fluid" src="Images/secondobjectjs.png" width="400">
+                    <p class="section-text">As you can see, this second object doesnt have any urls, this is because as i mentioned before, the request and the 2 booleans of the javascript are setted on the mainapage object we generate on the first request.</p>
+                    <p class="section-text">And the javascript is setted manually on the javascript variable of this second request.</p>
+                    <p class="section-text">Once we have done all the steps, we can now send our module again to KETSU and load it. If everything worked as intended we should see the results on the mainpage, in this case mine looks like this.</p>
+                    <img class="img-fluid" src="Images/finalgif.GIF" width="300">
+
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
 
-        function createAndAppendSection(section,subSections) {
+        function createAndAppendSection(section, subSections) {
 
             let sectionDiv = document.createElement('div');
             let sectionName = document.createElement('p');
@@ -151,35 +377,47 @@
 
             let subSectionsDiv = document.createElement('div');
 
-            sectionName.addEventListener('click',function(){
+            sectionName.addEventListener('click', function () {
                 $(subSectionsDiv).slideToggle();
-            },false);
+            }, false);
 
-            for (var y = 0; y < subSections.length;y++) {
-                let name = subSections[y].getAttribute('id').replace('_',' ');
+            for (var y = 0; y < subSections.length; y++) {
+                let name = subSections[y].getAttribute('id').replace(/_/g, ' ');
                 let element = document.createElement('p');
-
-                element.innerText = name;
+                makeElementScrollId(element, subSections[y].getAttribute('id'));
+                element.innerText = '- ' + name;
                 subSectionsDiv.appendChild(element);
-            }   
+            }
             sectionDiv.appendChild(subSectionsDiv);
             let leftDiv = document.querySelector('#left-div');
             leftDiv.appendChild(sectionDiv);
         }
 
+        function makeElementScrollId(element, id) {
+
+            $(element).click(function () {
+                console.log(element, id);
+
+                $('html, body').animate({
+                    scrollTop: $("#" + id).offset().top
+                }, 100);
+            });
+        }
+
         // This script sets the sections on the left row
         var sections = document.querySelectorAll('.section');
 
-        for (var x = 0; x < sections.length;x++) {
+        for (var x = 0; x < sections.length; x++) {
             let section = sections[x];
             let subSections = section.querySelectorAll('.subSection');
-            createAndAppendSection(section.getAttribute('id').replace('_',' '),subSections);
+            createAndAppendSection(section.getAttribute('id').replace(/_/g, ' '), subSections);
         }
     </script>
 
 
-<script></script>
+    <script></script>
 </body>
+
 </html>
 <!--  
     #id will indicate the name of the section
@@ -208,6 +446,4 @@
 </script>
  </body>
 </html>
-
 -->
-
